@@ -113,16 +113,16 @@
           {{else}}
             {{#if @last}}
               {{#if ../isFreeTrial}}
-                <div class="info-containter">
+                {{!-- <div class="info-containter">
                   <span>Once you register for an account, we’ll set up an organization for you - this is a manual step, but it usually only takes minutes.</span>
-                  <div>We’ll get back to you as soon as possible.</div> 
-                </div>
+                  <div>We’ll get back to you as soon as possible.</div>
+                </div> --}}
                 {{> (toUiNodePartial .)}}
               {{else}}
-                <div class="info-containter">
+                {{!-- <div class="info-containter">
                   <span>This sets up a single-user account on your local machine.</span>
                   <div> If you want to use a hosted version with GPU acceleration, multi-user capabilities and additional features, check out our hostings.</div>
-                </div>
+                </div> --}}
                 {{> (toUiNodePartial .)}}
               {{/if}}
             {{else}}
@@ -216,7 +216,7 @@
             {{/if}}
           {{else}}
             {{> (toUiNodePartial .)}}
-          {{/if}}        
+          {{/if}}
         {{/if}}
       {{/if}}
     {{/if}}
